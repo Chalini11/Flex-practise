@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display: grid;
+        grid-template-areas: 
+                            "header"
+                            "piano"
+                            "footer";
+        grid-template-rows: 14% 85% 1%;  
+        
+        grid-row-gap: 10px;
+        grid-column-gap: 10px;
+        height: 100vh;
+        
+    }
+header, footer, div {
+  padding: 1.2em;
+  background: rgb(16, 16, 15);
+  color: whitesmoke;
+  }
+    
+#pageHeader {
+  grid-area: header;
+  font-weight: bolder;
+  font-size: larger;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+#pageFooter {
+  grid-area: footer;
+  text-align: center;
+  font-weight: bolder;
+  }
+button{
+    color: rgb(202, 195, 188);
+    background-color: rgb(236, 232, 232);
+    border-radius:0.2cm;
+    /* border-color: rgb(210, 180, 9); */
+    border-color:transparent;
+    margin: 2px;
+
+}
+#piano{
+    position: relative;
+  display: flex;
+  grid-area: piano; 
+  flex-direction: repeat(7, 1fr);
+  border-color: rgb(13, 13, 13);
+  z-index: -1;
+  } 
+.items{
+    display: flex;
+    font-size: larger;
+    font-weight: bold;
+    color: rgb(29, 27, 27);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+button:hover {
+    background-color: rgb(209, 209, 209);
+    position: relative;
+ 
+}
+
+.black{
+   position: absolute;
+   left:29px;
+   top:130px;
+   border-radius: 0.2cm 0 0 0;
+   background-color:white;
+   width: 92%;
+   opacity: 0.5;
+}
+
+.black button
+{
+   
+   height: 4cm;
+   color: rgb(5, 5, 5);
+    background-color: rgb(10, 10, 10);
+    border-radius:0.2cm;
+    /* border-color: rgb(210, 180, 9); */
+    border-color:transparent;
+    margin: 2px;
+}
+.black button:hover {
+    background-color: rgb(209, 209, 209);
+    position: relative;
+ 
+}
+</style>
+
+<body>
+    <header id="pageHeader">PIANO</header>
+    
+    <div id="piano" onclick="sound()">
+       <button>1</button>
+       <button>2</button>
+       <button>3</button>
+       <button>4</button>
+       <button>5</button>
+       <button>6</button>
+       <button>7</button>
+       <button>8</button>
+       <button>9</button>
+       <button>7</button>
+       <button>1</button>
+       <button>2</button>
+       <button>3</button>
+       <button>4</button>
+       <button>5</button>
+       <button>6</button>
+       <button>7</button>
+       <button>8</button>
+       <button>9</button>
+       <button>9</button>
+       <button>1</button>
+       <button>1</button>
+       <button>2</button>
+       <button>3</button>
+       <button>4</button>
+       <button>5</button>
+       <button>6</button>
+       <button>7</button>
+       <button>8</button>
+       <button>9</button>
+       <button>9</button>
+       <button>9</button>
+       <button>1</button>
+       <button>1</button>
+       <button>2</button>
+       <button>3</button>
+       <button>4</button>
+       <button>5</button>
+       <button>6</button>
+       <button>2</button>
+       <button>3</button>
+       <button>4</button>
+       <button>5</button>
+       <button>6</button>
+       
+       
+     
+    </div>
+    <div class="black">
+       <button>5</button>
+       <button>6</button>
+       <button>2</button>
+       <button>3</button>
+       <button>4</button>
+       <button>5</button>
+       <button>6</button>
+    </div>
+        
+   
+    
+
+    <footer id="pageFooter">Made in 2001</footer>
+</body>
+\
+
+</html>
